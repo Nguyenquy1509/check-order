@@ -30,10 +30,8 @@ def check_new_order():
     else:
         print(f"ℹ️ Giao dịch khác: {content}")
 
-check_new_order()
-import time
-
+# 💫 Lặp vô hạn 5 phút/lần
 while True:
-    check_order()
-    print("🕒 Đợi 5 phút kiểm tra lại...")
-    time.sleep(300)  # 300 giây = 5 phút
+    check_new_order()
+    print("🕒 Đợi 5 phút kiểm tra lại...\n")
+    time.sleep(300)
