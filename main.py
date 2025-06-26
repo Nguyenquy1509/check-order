@@ -33,5 +33,5 @@ def check_new_order():
 # 💫 Lặp vô hạn 5 phút/lần
 while True:
     check_new_order()
-    print("🕒 Đợi 5 phút kiểm tra lại...\n")
-    time.sleep(300)
+    print("🕒 Đợi 30s kiểm tra lại...\n")
+    time.sleep(30)
